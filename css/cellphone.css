@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.cont-gral {
+    margin: 0 auto;
+    position: relative;
+    padding: 0 1rem;
+    width: 94%;
+}
+
+.encabezado{
+    position: fixed;
+    width: 100vw;
+justify-content: space-between;
+top: 0;
+left: 0;
+}
+
+
+.logo{
+    padding: 0;
+    width: 80%;
+}
+
+.menu a{
+    width: 100%;
+    text-align: center;
+}
+
+/**** Comienza menú ****/ 
+.menu {
+    margin: 0px;
+    float: right;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: auto;
+    background: #5a5a5a;
+    display: none;
+  }
+  
+  .show-menu-btn {
+    display: block;
+  }
+  
+  .hide-menu-btn {
+    display: none;
+  }
+  
+  .show-menu-btn,
+  .hide-menu-btn {
+    float: right;
+    padding: 0 16px;
+  }
+
+  .show-menu-btn i, .hide-menu-btn i{
+      display: block;
+  }
+  
+  .show-menu-btn i,
+  .hide-menu-btn i {
+    line-height: 4.4rem;
+  }
+  #chk:checked ~ .menu {
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    height: 6rem;
+    padding: 1rem;
+  }
+  
+  #chk:checked ~ .show-menu-btn {
+    display: none;
+  }
+  
+  #chk:checked ~ .hide-menu-btn {
+    display: block;
+  }
+  
+  #chk {
+    position: absolute;
+    top: -500px;
+    visibility: hidden;
+    z-index: -1111;
+  }
+  
+  .cont_principal{
+      flex-wrap: wrap;
+  }
+
+.cont_principal div{
+width: 100%;
+  }
+
+
+.cont_principal img{
+    width: 100%;
+}
+
+.terapia{
+    flex-wrap: wrap;
+}
+
+.terapia div, .terapia img{
+    width: 100%;
+}
+
+.terapia img{
+    margin: 1rem 0;
+}
+
+.contacto{
+    width: 100%;
+}
+
+form {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+form .datos div input {
+    width: 95%;
+}
+
+form .mensaje textarea {
+    width: 95%;
+    height: 300px;
+    margin-bottom: 2rem;
+}
+
+.contacto .mapa iframe {
+    width: 98%;
+    height: 200px;
+    border: none;
+}
