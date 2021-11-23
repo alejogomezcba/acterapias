@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="files/icon_page.svg" />
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&family=Lemonada&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Francois+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Francois+One&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -104,58 +104,43 @@
 
 
         <div class="contacto">
-
-
             <h3>Dejame tu consulta.</h3>
-            <form class="formulario" action="contacto.php" method="post" id="formulario">
-
-                <div class="datos">
-                    <div>
-                        <label for="nombre"></label><br>
-                        <input id="nombre" input name="nombre" required type="text" placeholder="Nombre" />
+                <form  class="contact_form" action="contacto.php" method="post">
+                    <label for="nombre"></label>
+                    <input id="nombre" type="text" name="nombre" placeholder="Nombre" required>
+                    <label for="apellido"></label>
+                    <input id="apellido" type="text" name="apellido" placeholder="Apellido" required> 
+                    <label for="email"></label>
+                    <input id="email" type="Email" name="email" placeholder="Email" required>
+                    <label for="telefono"></label>
+                    <input id="telefono" type="tel" name="telefono" placeholder="Formato: 3513333333" required>
+                    <label for="mensaje"></label>
+                    <textarea name="mensaje" id="mensaje" placeholder="Escribe aquí tu consulta" required></textarea>
+    
+                    <div  id="btn-form-cont" class="btn-form-cont">
+                        <input type="reset" id="clear_form" name="clear_form" class="btn-form btn" value="Limpiar">            
                     </div>
-                    <div>
-                        <label for="apellido"></label><br>
-                        <input id="apellido" input name="apellido" required type="text" placeholder="Apellido" />
+    
+                    <div class="captcha_cont">
+                        <span>Completar Captcha</span>
+                        <div class="captcha">
+                            <p type="text" id="mainCaptcha" class="catpcha_text"></p>
+                            <i class="fas fa-redo-alt" id="refresh" value="Nuevo Captcha" onclick="generateCaptcha()"></i>
+                        </div>
+                        <div>
+                            <input type="text" id="txtInput"/>  
+                            <input id="Button1" type="button" value="Validar" onclick="CheckValidCaptcha();cleartxtInput(); generateCaptcha();"/>
+                            <span id="error" style="color:red" class="ocultar"></span>
+                        </div>
                     </div>
-                    <div>
-                        <label for="email"></label><br>
-                        <input id="email" type="email" name="email" required placeholder="E-mail" />
-                    </div>
-                    <div>
-                        <label for="telefono"></label><br>
-                        <input id="telefono" type="tel" name="telefono" required placeholder="Teléfono" />
-                    </div>
-                </div><br>
-                <div class="mensaje">
-                    <label for="mensaje"></label><br>
-                    <textarea name="mensaje" placeholder="Escribe aquí tu consulta" required></textarea>
-                </div>
+                </form>
+            <div class="mapa">
 
-                <div id="btn-form-cont">
-                    <input class="btn" type="reset" id="reset" name="reset" value="Limpiar Campos">
-                </div>
-                
-                <div class="captcha_cont">
-                    <span>Completar Captcha</span>
-                    <div class="captcha">
-                        <p type="text" id="mainCaptcha" class="catpcha_text"></p>
-                        <i class="fas fa-redo-alt" id="refresh" value="Nuevo Captcha" onclick="generateCaptcha()"></i>
-                    </div>
-                    <div>
-                        <input type="text" id="txtInput" />
-                        <input id="Button1" type="button" value="Validar"
-                            onclick="CheckValidCaptcha();cleartxtInput(); generateCaptcha();" />
-                        <span id="error" style="color:red" class="ocultar"></span>
-                    </div>
-                </div>
-
-            </form>
-
-            
-
-        </div>
-
+                <h3>Consultorio</h3>
+                <p><i class="fas fa-map-marked-alt"></i> Buenos Aires 124</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d851.2167161233222!2d-64.18385617075162!3d-31.417793998837734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDI1JzA0LjEiUyA2NMKwMTAnNTkuOSJX!5e0!3m2!1ses!2sar!4v1610719405772!5m2!1ses!2sar"></iframe>
+            </div>
             <br><br><br>
             <div class="redes-sociales">
                 <h3>Seguime en las redes </h3>
@@ -169,7 +154,7 @@
         <footer>
             <p>Diseñado por <a href="https://www.facebook.com/crabdesignsarg">CrabDesigns</a> </p>
         </footer>
-
+    </div>
     <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
     <script src="js/app.js"></script>
 </body>

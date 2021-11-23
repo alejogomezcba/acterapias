@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ana Centurión - Terapias Holísticas</title>
     <link rel="icon" type="image/png" href="files/icon_page.svg" />
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&family=Lemonada&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Francois+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&family=Lemonada&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" media="screen and (min-width: 300px) and (max-width: 800px)" href="css/cellphone.css">
-
+    
 </head>
 
-<body onload="generateCaptcha();">
+<body>
 
 
     <div class="cont-gral">
@@ -35,19 +33,17 @@
         <div class="cont_principal">
             <div>
                 <h1 class="h1_pri">Bienvenidos a mi página!</h1>
-                <h2 class="h2_pri">Los invito a conocer de este mundo holístico donde he recorrido formándome para
-                    ayudar a quien
+                <h2 class="h2_pri">Los invito a conocer de este mundo holístico donde he recorrido formándome para ayudar a quien
                     lo
                     desee, para sanar y sanarme.</h2>
-                <p class="p_pri">Cada terapia tiene su particularidad y cada técnica es una invitación para conocernos a
-                    nosotros mismos,
+                <p class="p_pri">Cada terapia tiene su particularidad y cada técnica es una invitación para conocernos a nosotros mismos,
                     para
                     entender las realidades actuales y trascender de cada situación que deseen cambiar...</p>
             </div>
-            <img src="files/isologo.svg" alt="Isologo Ana TH">
+            <img src="files/isologo.svg" alt="Isologo Ana TH">    
         </div>
 
-
+       
 
         <p id="terapias">TERAPIAS</p>
 
@@ -72,8 +68,7 @@
                 <div class="texto_terapia">
                     <h4>Terapia Metamórfica</h4>
                     <p>Es un método vibracional, natural y sencillo que nos ayuda a recuperar la
-                        salud, la alegría y a vivir serenamente. Se aplica con <span>masajes suaves</span> permitiendo
-                        activar los sensores energéticos que tenemos por toda la piel.</p>
+                        salud, la alegría y a vivir serenamente. Se aplica con <span>masajes suaves</span> permitiendo activar los sensores energéticos que tenemos por toda la piel.</p>
                 </div>
 
             </div>
@@ -81,9 +76,7 @@
             <div class="terapia">
                 <div class="texto_terapia">
                     <h4>Reiki Usui</h4>
-                    <p>Es una técnica de sanación originaria de Japón en la cual mediante la imposición de manos se
-                        <span>canaliza la energía del universo</span> para armonizar naturalmente el cuerpo, ayudando
-                        también a tratar enfermedades, desequilibrios físicos y emocionales. </p>
+                    <p>Es una técnica de sanación originaria de Japón en la cual mediante la imposición de manos se <span>canaliza la energía del universo</span> para armonizar naturalmente el cuerpo, ayudando también a tratar enfermedades, desequilibrios físicos y emocionales. </p>
                 </div>
                 <img src="files/reiki.jpg" alt="Imagen Reiki">
             </div>
@@ -93,85 +86,69 @@
 
                 <div class="texto_terapia">
                     <h4>Terapia Ayurvedica</h4>
-                    <p>Es una antigua ciencia de la salud India y se traduce como <span>la ciencia de la vida</span>.
-                        Ayurveda representa un enfoque holístico de cuidado de la salud, que entiende a esta como un
-                        estado de equilibrio entre cuerpo, mente y espíritu.</p>
+                    <p>Es una antigua ciencia de la salud India y se traduce como <span>la ciencia de la vida</span>. Ayurveda representa un enfoque holístico de cuidado de la salud, que entiende a esta como un estado de equilibrio entre cuerpo, mente y espíritu.</p>
                 </div>
 
             </div>
         </div>
-        <p id="contacto">CONTACTO</p>
+<p id="contacto">CONTACTO</p>
 
-
-        <div class="contacto">
-
-
-            <h3>Dejame tu consulta.</h3>
-            <form class="formulario" action="contacto.php" method="post" id="formulario">
-
+        
+        <div class="contacto" >
+            <br>
+<br>
+        <h3>Dejame tu consulta.</h3>
+            <form class="formulario" action="contacto.php" method="post">
+                
                 <div class="datos">
                     <div>
                         <label for="nombre"></label><br>
-                        <input id="nombre" input name="nombre" required type="text" placeholder="Nombre" />
+                        <input id="nombre" input name="nombre" required type="text" placeholder="Nombre"/>
                     </div>
                     <div>
                         <label for="apellido"></label><br>
-                        <input id="apellido" input name="apellido" required type="text" placeholder="Apellido" />
+                        <input id="apellido" input name="apellido" required type="text" placeholder="Apellido"/>
                     </div>
                     <div>
                         <label for="email"></label><br>
-                        <input id="email" type="email" name="email" required placeholder="E-mail" />
+                        <input id="email" type="email" name="email" required placeholder="E-mail"/>
                     </div>
                     <div>
                         <label for="telefono"></label><br>
-                        <input id="telefono" type="tel" name="telefono" required placeholder="Teléfono" />
+                        <input id="telefono" type="tel" name="telefono" required placeholder="Teléfono"/>
                     </div>
                 </div><br>
                 <div class="mensaje">
                     <label for="mensaje"></label><br>
-                    <textarea name="mensaje" placeholder="Escribe aquí tu consulta" required></textarea>
+                    <textarea name="mensaje" placeholder="Escribe aquí tu consulta"></textarea>
                 </div>
 
-                <div id="btn-form-cont">
-                    <input class="btn" type="reset" id="reset" name="reset" value="Limpiar Campos">
-                </div>
+                <input class="btn" type="submit" id="submit" name="submit" value="Enviar">
+                <input class="btn" type="reset" id="reset" name="reset" value="Limpiar Campos">
                 
-                <div class="captcha_cont">
-                    <span>Completar Captcha</span>
-                    <div class="captcha">
-                        <p type="text" id="mainCaptcha" class="catpcha_text"></p>
-                        <i class="fas fa-redo-alt" id="refresh" value="Nuevo Captcha" onclick="generateCaptcha()"></i>
-                    </div>
-                    <div>
-                        <input type="text" id="txtInput" />
-                        <input id="Button1" type="button" value="Validar"
-                            onclick="CheckValidCaptcha();cleartxtInput(); generateCaptcha();" />
-                        <span id="error" style="color:red" class="ocultar"></span>
-                    </div>
-                </div>
-
+                
             </form>
 
-            
+            <div class="mapa">
 
-        </div>
-
-            <br><br><br>
+                <h3>Consultorio</h3>
+                <p><i class="fas fa-map-marked-alt"></i> Buenos Aires 124</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d851.2167161233222!2d-64.18385617075162!3d-31.417793998837734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDI1JzA0LjEiUyA2NMKwMTAnNTkuOSJX!5e0!3m2!1ses!2sar!4v1610719405772!5m2!1ses!2sar"></iframe>
+            </div>
+<br><br><br>
             <div class="redes-sociales">
                 <h3>Seguime en las redes </h3>
                 <br>
-                <a href="https://www.instagram.com/ac.terapiasholisticas/" target="_blank"><i
-                        class="fab fa-instagram"></i></a>
-
+                <a href="https://www.instagram.com/ac.terapiasholisticas/" target="_blank"><i class="fab fa-instagram"></i></a>
+                
             </div>
         </div>
 
         <footer>
             <p>Diseñado por <a href="https://www.facebook.com/crabdesignsarg">CrabDesigns</a> </p>
         </footer>
-
+    </div>
     <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
-    <script src="js/app.js"></script>
 </body>
 
 </html>
